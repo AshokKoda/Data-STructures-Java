@@ -13,6 +13,7 @@ public class DataStructuresInJava {
 		MyLinkedListOperations myLinkedList5 = new MyLinkedListOperations();
 		MyLinkedListOperations myLinkedList6 = new MyLinkedListOperations();
 		MyLinkedListOperations myLinkedList7 = new MyLinkedListOperations();
+		MyLinkedListOperations myLinkedList8 = new MyLinkedListOperations();
 		
 		System.out.println("<------------Add node in start----------->");
 		myLinkedList.addNode(70);
@@ -83,7 +84,17 @@ public class DataStructuresInJava {
 		
 		myLinkedList7.PrintList();
 		myLinkedList7.size();
-
+		
+		System.out.println("<------------Sort node----------->");
+		myLinkedList8.insert(56);
+		myLinkedList8.insert(30);
+		myLinkedList8.insert(40);
+		myLinkedList8.insert(70);
+		System.out.println("Linked List Before Sorting:");
+		myLinkedList8.PrintList();
+		myLinkedList8.sort();
+		System.out.println("Linked List After Sorting:");
+		myLinkedList8.PrintList();
 
 	}
 
