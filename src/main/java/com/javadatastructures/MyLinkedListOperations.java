@@ -5,29 +5,21 @@ public class MyLinkedListOperations {
 	Node head;
 	Node tail;
 
-	public MyLinkedListOperations() {
-		head = null;
-	}
-
-	public void addNode(int newVal) {
-		Node newNode = new Node();
-		newNode.data = newVal;
-		newNode.nextNode = null;
-
+	// Push as first node will be the last node
+	public void addNode(int data) {
+		Node newNode = new Node(data);
 		if (head == null) {
 			head = newNode;
 		} else {
-			Node temp = new Node();
-			temp = head;
-			while (temp.nextNode != null)
-				temp = temp.nextNode;
-			temp.nextNode = newNode;
+			Node temp = head;
+			head = newNode;
+			newNode.next = temp;
 		}
 	}
 
-	public void appendNode(int newVal) {
-		Node nextNode = new Node();
-		nextNode.data = newVal;
+	// Push as last node will be the first node
+	public void append(int data) {
+		Node nextNode = new Node(data);
 		if (head == null) {
 			head = nextNode;
 			tail = nextNode;
@@ -37,16 +29,14 @@ public class MyLinkedListOperations {
 		}
 	}
 
+	// Show method to display the linked list data
 	public void PrintList() {
-		Node temp = new Node();
-		temp = this.head;
+		Node temp = this.head;
 		if (temp != null) {
-			System.out.print("Linked List have: ");
 			while (temp != null) {
-				System.out.print(temp.data + " ");
-				temp = temp.nextNode;
+				System.out.println(temp.data + " ");
+				temp = temp.next;
 			}
-			System.out.println();
 		} else {
 			System.out.println("The list is empty.");
 		}
