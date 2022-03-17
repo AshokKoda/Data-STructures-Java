@@ -1,6 +1,9 @@
 package com.javadatasturcturestest;
 
+import org.junit.Assert;
 import org.junit.Test;
+
+import com.javadatastructures.MyLinkedListOperations;
 
 public class LinkedListTest {
 
@@ -86,5 +89,14 @@ public class LinkedListTest {
 		System.out.println("Before pop : " + intList);
 		System.out.println("Popped out node : " + intList.popLast());
 		System.out.println("After pop : " + intList);
+	}
+	
+	@Test
+	public void search() {
+		MyLinkedListOperations myLinkedList = new MyLinkedListOperations();
+		myLinkedList.insert(56);
+		myLinkedList.insert(30);
+		myLinkedList.insert(70);
+		Assert.assertSame(30, myLinkedList);
 	}
 }

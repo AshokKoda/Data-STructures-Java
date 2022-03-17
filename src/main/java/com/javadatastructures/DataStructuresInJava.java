@@ -10,6 +10,7 @@ public class DataStructuresInJava {
 		MyLinkedListOperations myLinkedList2 = new MyLinkedListOperations();
 		MyLinkedListOperations myLinkedList3 = new MyLinkedListOperations();
 		MyLinkedListOperations myLinkedList4 = new MyLinkedListOperations();
+		MyLinkedListOperations myLinkedList5 = new MyLinkedListOperations();
 		
 		System.out.println("<------------Add node in start----------->");
 		myLinkedList.addNode(70);
@@ -46,6 +47,13 @@ public class DataStructuresInJava {
 		System.out.println("After remove last node: ");
 		myLinkedList4.popLastNode();
 		myLinkedList4.PrintList();
+		
+		System.out.println("<------------Search node----------->");
+		myLinkedList5.insert(56);
+		myLinkedList5.insert(30);
+		myLinkedList5.insert(70);
+		myLinkedList5.PrintList();
+		myLinkedList5.search(30);
 
 	}
 
