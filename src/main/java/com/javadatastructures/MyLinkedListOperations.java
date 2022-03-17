@@ -56,6 +56,16 @@ public class MyLinkedListOperations {
 		}
 	}
 
+	// Delete the first node in linkedList using pop
+	public void pop() {
+		Node temp = head;
+		if (head == null) {
+			System.out.println("List is empty");
+		} else {
+			head = temp.next;
+		}
+	}
+
 	// Show method to display the linked list data
 	public void PrintList() {
 		Node temp = this.head;
