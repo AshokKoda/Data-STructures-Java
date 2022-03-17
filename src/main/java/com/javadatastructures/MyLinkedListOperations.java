@@ -3,19 +3,20 @@ package com.javadatastructures;
 public class MyLinkedListOperations {
 
 	Node head;
-	
+	Node tail;
+
 	public MyLinkedListOperations() {
 		head = null;
 	}
-	
+
 	public void addNode(int newVal) {
 		Node newNode = new Node();
 		newNode.data = newVal;
 		newNode.nextNode = null;
-		
-		if(head == null) {
+
+		if (head == null) {
 			head = newNode;
-		}else {
+		} else {
 			Node temp = new Node();
 			temp = head;
 			while (temp.nextNode != null)
@@ -23,7 +24,19 @@ public class MyLinkedListOperations {
 			temp.nextNode = newNode;
 		}
 	}
-	
+
+	public void appendNode(int newVal) {
+		Node nextNode = new Node();
+		nextNode.data = newVal;
+		if (head == null) {
+			head = nextNode;
+			tail = nextNode;
+		} else {
+			tail.next = nextNode;
+			tail = tail.next;
+		}
+	}
+
 	public void PrintList() {
 		Node temp = new Node();
 		temp = this.head;
