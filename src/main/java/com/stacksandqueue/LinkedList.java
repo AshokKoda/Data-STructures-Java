@@ -168,6 +168,24 @@ public class LinkedList<K> {
 	}
 
 	/*
+	 * Size
+	 */
+	public void size() {
+		int size = 0;
+		Node<K> current = head;
+		if (head == null) {
+			System.out.println("Size is 0");
+		}
+		current = head;
+		size = 1;
+		while (current.next != null) {
+			current = current.next;
+			size++;
+		}
+		System.out.println("List size linked list is:" + size);
+	}
+
+	/*
 	 * Print
 	 */
 	public void printList() {
