@@ -16,12 +16,14 @@ public class DataStructuresInJava {
 		MyLinkedListOperations myLinkedList8 = new MyLinkedListOperations();
 		
 		System.out.println("<------------Add node in start----------->");
+		myLinkedList.addNode(80);
 		myLinkedList.addNode(70);
 		myLinkedList.addNode(30);
 		myLinkedList.addNode(56);
 		myLinkedList.PrintList();
 
 		System.out.println("<------------Add node in last----------->");
+		myLinkedList1.append(86);
 		myLinkedList1.append(56);
 		myLinkedList1.append(30);
 		myLinkedList1.append(70);
