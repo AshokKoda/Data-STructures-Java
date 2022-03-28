@@ -11,9 +11,9 @@ public class LinkedListTest {
 	public void addFirstThreeNode() {
 		System.out.println("----------------Add First Three Node---------------------");
 		MyLinkedList<Integer> intList = new MyLinkedList<Integer>();
-		INode<Integer> firstNode = new MyNode<>(70);
-		INode<Integer> secondNode = new MyNode<>(30);
-		INode<Integer> thirdNode = new MyNode<>(56);
+		INode<Integer> firstNode = new MyNode<Integer>(70);
+		INode<Integer> secondNode = new MyNode<Integer>(30);
+		INode<Integer> thirdNode = new MyNode<Integer>(56);
 
 		intList.addFirst(firstNode);
 		intList.addFirst(secondNode);
@@ -26,9 +26,9 @@ public class LinkedListTest {
 	public void appendNodeAtLast() {
 		System.out.println("------------------Append Node At Last--------------------");
 		MyLinkedList<Integer> intList = new MyLinkedList<Integer>();
-		INode<Integer> firstNode = new MyNode<>(56);
-		INode<Integer> secondNode = new MyNode<>(30);
-		INode<Integer> thirdNode = new MyNode<>(70);
+		INode<Integer> firstNode = new MyNode<Integer>(56);
+		INode<Integer> secondNode = new MyNode<Integer>(30);
+		INode<Integer> thirdNode = new MyNode<Integer>(70);
 
 		intList.addLast(firstNode);
 		intList.addLast(secondNode);
@@ -42,10 +42,10 @@ public class LinkedListTest {
 	public void insertNodeAtIndex() {
 		System.out.println("-------------------Insert Node At Index---------------------");
 		MyLinkedList<Integer> intList = new MyLinkedList<Integer>();
-		INode<Integer> firstNode = new MyNode<>(56);
-		INode<Integer> secondNode = new MyNode<>(70);
-		INode<Integer> thirdNode = new MyNode<>(30);
-		INode<Integer> fourthNode = new MyNode<>(40);
+		INode<Integer> firstNode = new MyNode<Integer>(56);
+		INode<Integer> secondNode = new MyNode<Integer>(70);
+		INode<Integer> thirdNode = new MyNode<Integer>(30);
+		INode<Integer> fourthNode = new MyNode<Integer>(40);
 
 		intList.addLast(firstNode);
 		intList.addLast(secondNode);
@@ -61,9 +61,9 @@ public class LinkedListTest {
 	public void pop() {
 		System.out.println("-------------------pop---------------------");
 		MyLinkedList<Integer> intList = new MyLinkedList<Integer>();
-		INode<Integer> firstNode = new MyNode<>(56);
-		INode<Integer> secondNode = new MyNode<>(30);
-		INode<Integer> thirdNode = new MyNode<>(70);
+		INode<Integer> firstNode = new MyNode<Integer>(56);
+		INode<Integer> secondNode = new MyNode<Integer>(30);
+		INode<Integer> thirdNode = new MyNode<Integer>(70);
 
 		intList.addLast(firstNode);
 		intList.addLast(secondNode);
@@ -78,9 +78,9 @@ public class LinkedListTest {
 	public void popLast() {
 		System.out.println("-------------------pop Last---------------------");
 		MyLinkedList<Integer> intList = new MyLinkedList<Integer>();
-		INode<Integer> firstNode = new MyNode<>(56);
-		INode<Integer> secondNode = new MyNode<>(30);
-		INode<Integer> thirdNode = new MyNode<>(70);
+		INode<Integer> firstNode = new MyNode<Integer>(56);
+		INode<Integer> secondNode = new MyNode<Integer>(30);
+		INode<Integer> thirdNode = new MyNode<Integer>(70);
 
 		intList.addLast(firstNode);
 		intList.addLast(secondNode);

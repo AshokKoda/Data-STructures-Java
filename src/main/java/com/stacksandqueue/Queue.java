@@ -5,7 +5,7 @@ public class Queue<K> {
 	LinkedList<K> linkedList;
 
 	public Queue() {
-		this.linkedList = new LinkedList<>();
+		this.linkedList = new LinkedList<K>();
 	}
 
 	public void enQueue(K data) {
@@ -18,7 +18,7 @@ public class Queue<K> {
 
 	public static void main(String[] args) {
 		
-		Queue<Integer> queue = new Queue<>();
+		Queue<Integer> queue = new Queue<Integer>();
 		queue.enQueue(56);
 		queue.enQueue(30);
 		queue.enQueue(70);

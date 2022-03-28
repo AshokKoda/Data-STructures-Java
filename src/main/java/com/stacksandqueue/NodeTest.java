@@ -10,7 +10,7 @@ public class NodeTest {
 	@Test
 	public void searchWithValue() {
 		System.out.println("----------------Search With Value-----------------");
-		LinkedList<Integer> list = new LinkedList<>();
+		LinkedList<Integer> list = new LinkedList<Integer>();
 		list.appendNode(56);
 		list.appendNode(30);
 		list.appendNode(40);
@@ -24,7 +24,7 @@ public class NodeTest {
 	@Test
 	public void addAfterKey() {
 		System.out.println("-----------------------Add After Key---------------------");
-		LinkedList<Integer> list = new LinkedList<>();
+		LinkedList<Integer> list = new LinkedList<Integer>();
 
 		list.appendNode(56);
 		list.appendNode(30);
@@ -39,7 +39,7 @@ public class NodeTest {
 	@Test
 	public void removeKeyAndSize() {
 		System.out.println("-----------------------Remove Key And Size---------------------");
-		LinkedList<Integer> list = new LinkedList<>();
+		LinkedList<Integer> list = new LinkedList<Integer>();
 		list.appendNode(56);
 		list.appendNode(30);
 		list.appendNode(40);
@@ -59,7 +59,7 @@ public class NodeTest {
 	@Test
 	public void sortedList() {
 		System.out.println("-----------------------Sorted List---------------------");
-		LinkedList<Integer> list = new LinkedList<>();
+		LinkedList<Integer> list = new LinkedList<Integer>();
 		list.appendNode(56);
 		list.appendNode(30);
 		list.appendNode(40);

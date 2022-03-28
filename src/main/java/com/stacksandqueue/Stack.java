@@ -5,7 +5,7 @@ public class Stack<K> {
 	LinkedList<K> linkedList;
 	
 	public Stack() {
-		this.linkedList = new LinkedList<>();
+		this.linkedList = new LinkedList<K>();
 	}
 	
 	public void push(K data) {
@@ -22,7 +22,7 @@ public class Stack<K> {
 
 	public static void main(String[] args) {
 		
-		Stack<Integer> stack = new Stack<>();
+		Stack<Integer> stack = new Stack<Integer>();
 		stack.push(70);
 		stack.push(30);
 		stack.push(56);
